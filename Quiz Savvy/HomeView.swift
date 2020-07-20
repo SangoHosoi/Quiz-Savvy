@@ -16,7 +16,7 @@ struct HomeView: View {
             TopView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "tornado")
+                        Image(systemName: "play.rectangle.fill")
                         Text("Top")
                     }
                 }.tag(0)
@@ -24,7 +24,7 @@ struct HomeView: View {
             ChooseView(items: situationStore)
                 .tabItem {
                     VStack {
-                        Image(systemName: "person.fill")
+                        Image(systemName: "a.circle.fill")
                         Text("Quiz")
                     }
                 }.tag(1)
@@ -32,7 +32,7 @@ struct HomeView: View {
            FavoriteView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "cart.fill")
+                        Image(systemName: "bookmark.fill")
                         Text("Favorite")
                     }
                 }.tag(2)

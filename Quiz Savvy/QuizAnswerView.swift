@@ -44,9 +44,14 @@ struct AnswerFragView: View {
     var ans: Bool = false 
     var body: some View {
         if ans == true {
-            return Text("まる")
+            return Image(systemName: "circle")
+            .resizable()
+                .frame(width: 40.0, height: 40.0)
         } else {
-            return Text("ばつ")
+            return Image(systemName: "multiply")
+            .resizable()
+                .frame(width: 40.0, height: 40.0)
+
         }
     }
 }

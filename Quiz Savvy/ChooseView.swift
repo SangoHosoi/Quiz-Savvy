@@ -13,7 +13,7 @@ struct ChooseView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 30.0) {
                 ForEach(self.items) { item in
                    ZStack{
                     NavigationLink(destination: QuizDetailView(num: item.quiz)) {
@@ -21,7 +21,9 @@ struct ChooseView: View {
                                 .renderingMode(.original)
                                 .resizable()
                                 .frame(width: 280, height: 180)
-                            .cornerRadius(10)
+                                .border(Color.green,width:5)
+                                .cornerRadius(10)
+
                             
                         }
                         Text(item.type)
@@ -32,10 +34,10 @@ struct ChooseView: View {
                     }
                 }
             }
-            .navigationBarTitle("Situation")
-            
+        .navigationBarTitle("Situation",displayMode: .inline)
+                
         }
-        .padding(.top,-45)
+
     }
 }
 

@@ -11,15 +11,19 @@ import SwiftUI
 struct StartView: View {
     var body: some View {
         NavigationView {
-            VStack(alignment: .center, spacing: 300.0){
+            VStack(alignment: .center, spacing: 180.0){
+                
                 Image("Start")
                     .resizable()
-                    .frame(width: 280, height: 180)
+                    .frame(width: 380, height: 280)
                     .cornerRadius(10)
                 
                 NavigationLink(destination: HomeView()){
-                    Text("Start")
+                    Text("Start!")
                         .font(.largeTitle)
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.black)
+                        .padding(.bottom, 150.0)
                 }
             }
             
